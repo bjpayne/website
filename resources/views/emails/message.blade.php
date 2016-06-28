@@ -164,9 +164,9 @@
                     <tr>
                         <td>
                             <h1>Message from a site visitor</h1>
-                            <p>From: {{ $name }}</p>
-                            <p>Email: {{ $email }}</p>
-                            <p>Message: {{ $text }}</p>
+                            <p><strong>From:</strong> {{ $name }}</p>
+                            <p><strong>Email:</strong> {{ $email }}</p>
+                            <p><strong>Message:</strong> {{ $text }}</p>
                             <td></td>
                             <!-- button -->
                             <table class="btn-primary" cellpadding="0" cellspacing="0" border="0">
