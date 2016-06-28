@@ -1,0 +1,19 @@
+// Font weights
+$regular: 400;
+
+// Base Font
+$base-font-family: 'Open Sans' sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-family: 'Montserratt', sans-serif;
+$header-font-weight: $regular;
+
+@import "modules/all";

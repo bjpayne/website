@@ -1,0 +1,8 @@
+#ying, #yang {
+  float: left;
+  width: 50%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}

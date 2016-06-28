@@ -15,8 +15,8 @@ return [
     */
 
     'mailgun' => [
-        'domain' => env('MAILGUN_DOMAIN'),
-        'secret' => env('MAILGUN_SECRET'),
+        'domain' => 'https://api.mailgun.net/v3/mg.minpayne.com',
+        'secret' => 'key-789a031fac0192d5044c8198cd670037',
     ],
 
     'mandrill' => [

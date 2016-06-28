@@ -11,9 +11,36 @@
 |
 */
 
+use Illuminate\Mail\Message;
+
 Route::get('/', function () {
+    return view('home');
+});
 
+Route::post('/contact', function () {
     
+    Mail::send(
+        'contact',
+        [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'message' => $_POST['message']
+        ],
+        function (Message $message) {
+        
+            $message->from('no-reply@bj-payne.com', 'Site visitor email');
+        
+            $message->to('benja@minpayne.com');
 
-    return view('welcome');
+        }
+    );
+
+    $message = new \App\Message;
+
+    $message->name      = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+    $message->email     = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $message->message   = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);
+
+    $message->save();
+
 });
