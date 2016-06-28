@@ -27,8 +27,10 @@ Route::post('/contact', function () {
             'text' => $_POST['message']
         ],
         function (Message $message) {
+            
+            $message->subject('Message from ' . $_POST['name']);
         
-            $message->from('no-reply@bj-payne.com', 'Site visitor email');
+            $message->from($_POST['email'], $_POST['name']);
         
             $message->to('bj.payne@me.com');
 

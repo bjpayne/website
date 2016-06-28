@@ -47,8 +47,8 @@
         .btn-primary td a {
             background-color: #348eda;
             border: solid 1px #348eda;
-            border-radius: 25px;
-            border-width: 3px 10px;
+            border-radius: 3px;
+            border-width: 3px 15px;
             display: inline-block;
             color: #ffffff;
             cursor: pointer;
@@ -100,7 +100,7 @@
             font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
             font-weight: 200;
             line-height: 1.2em;
-            margin: 40px 0 10px;
+            margin: 30px 0 10px;
         }
         h1 {
             font-size: 36px;
