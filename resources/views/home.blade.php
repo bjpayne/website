@@ -15,6 +15,7 @@
             </a>
             <div id="contact-form">
                 <form action="/contact" method="post">
+                    {{ csrf_field() }}
                     <div class="form-group">
                         <label for="name">name</label>
                         <input type="text" name="name" id="name">
