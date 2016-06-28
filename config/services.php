@@ -15,7 +15,7 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'https://api.mailgun.net/v3/mg.minpayne.com',
+        'domain' => 'mg.minpayne.com',
         'secret' => 'key-789a031fac0192d5044c8198cd670037',
     ],
 
