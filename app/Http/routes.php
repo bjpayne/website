@@ -30,7 +30,7 @@ Route::post('/contact', function () {
         
             $message->from('no-reply@bj-payne.com', 'Site visitor email');
         
-            $message->to('benja@minpayne.com');
+            $message->to('benj@minpayne.com');
 
         }
     );
@@ -42,5 +42,7 @@ Route::post('/contact', function () {
     $message->message   = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);
 
     $message->save();
+
+    echo "Message has been sent. Thank You.";
 
 });
