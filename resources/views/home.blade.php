@@ -27,6 +27,9 @@
                         <label for="message">Message</label>
                         <textarea name="message" id="message"></textarea>
                     </div>
+                    <div class="form-group">
+                        <button type="submit">send</button>
+                    </div>
                 </form>
             </div>
         </div>
