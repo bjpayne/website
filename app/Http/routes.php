@@ -30,7 +30,7 @@ Route::post('/contact', function () {
         
             $message->from('no-reply@bj-payne.com', 'Site visitor email');
         
-            $message->to('benj@minpayne.com');
+            $message->to('benj');
 
         }
     );
