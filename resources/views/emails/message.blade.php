@@ -32,7 +32,8 @@
             color: #348eda;
         }
         .btn-primary {
-            Margin-bottom: 10px;
+            margin-top: 10px;
+            maring-bottom: 10px;
             width: auto !important;
         }
         .btn-primary td {
@@ -47,7 +48,7 @@
             background-color: #348eda;
             border: solid 1px #348eda;
             border-radius: 25px;
-            border-width: 10px 20px;
+            border-width: 3px 10px;
             display: inline-block;
             color: #ffffff;
             cursor: pointer;
