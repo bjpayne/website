@@ -14,7 +14,7 @@
                 <h1>Contact</h1>
             </a>
             <div id="contact-form">
-                <form action="/contact">
+                <form action="/contact" method="post">
                     <div class="form-group">
                         <label for="name">name</label>
                         <input type="text" name="name" id="name">
