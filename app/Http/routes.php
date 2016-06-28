@@ -24,7 +24,7 @@ Route::post('/contact', function () {
         [
             'name' => $_POST['name'],
             'email' => $_POST['email'],
-            'message' => $_POST['message']
+            'text' => $_POST['message']
         ],
         function (Message $message) {
         
