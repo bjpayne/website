@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::post('/contact', function () {
     
     Mail::send(
-        'message',
+        'emails.message',
         [
             'name' => $_POST['name'],
             'email' => $_POST['email'],
