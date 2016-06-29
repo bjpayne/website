@@ -13,11 +13,11 @@
 
 use Illuminate\Mail\Message;
 
-Route::get('/', function () {
+Route::get('/', ['as' => 'home', function () {
     return view('home');
-});
+}]);
 
-Route::post('/contact', function () {
+Route::post('/contact', ['as' => 'contact', function () {
     
     Mail::send(
         'emails.message',
@@ -61,6 +61,6 @@ Route::post('/contact', function () {
 
     $message->save();
 
-    echo "Message has been sent. Thank You.";
+    return redirect('home')->with('message_sent', 'Thank you for your message ' . $_POST['name']);
 
-});
+}]);
