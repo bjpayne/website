@@ -166,13 +166,13 @@
                             <h1>Thank you for your message.</h1>
                             <p><strong>Hey {{ $name }},</strong></p>
                             <p>Thanks for reaching out to me. I will try and respond as soon as possible</p>
-                            <br>
-                            <br>
                             <p>- Ben</p>
+                            <br>
+                            <br>
                             <small>
                                 <em>
                                     “There are 2 hard problems in computer science: cache invalidation,
-                                    naming things, and off-by-1 errors.” - Leon Bambrick
+                                    naming things, and off-by-1 errors.” <br> - Leon Bambrick
                                 </em>
                             </small>
                         </td>
