@@ -42,12 +42,12 @@
         <div id="yang">
             <a class="controller about-controller" href="#ying">
                 <h1>About</h1>
-                <div id="about-copy">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
+            </a>
+            <div id="about-copy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
                     reprehenderit, tempora! Accusamus at aut dolor enim fugit incidunt inventore libero, magni minus
                     necessitatibus sint temporibus unde.</p>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
 </div>
