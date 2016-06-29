@@ -46,7 +46,7 @@ Route::post('/contact', function () {
 
             $message->subject('Confirmation');
 
-            $message->from('benj@minpayne.com');
+            $message->from('benj@minpayne.com', 'Ben Payne');
 
             $message->to($_POST['email']);
 
