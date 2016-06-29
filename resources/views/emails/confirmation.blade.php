@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Message</title>
+    <title>Confirmation</title>
     <style>
         /* -------------------------------------
             GLOBAL
@@ -163,20 +163,18 @@
                 <table>
                     <tr>
                         <td>
-                            <h1>Message from a site visitor</h1>
-                            <p><strong>From:</strong> {{ $name }}</p>
-                            <p><strong>Email:</strong> {{ $email }}</p>
-                            <p><strong>Message:</strong> {{ $text }}</p>
-                            <td></td>
-                            <!-- button -->
-                            <table class="btn-primary" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                    <td>
-                                        <a href="mailto:{{ $email }}">reply</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!-- /button -->
+                            <h1>Thank you for your message.</h1>
+                            <p><strong>Hey {{ $name }},</strong></p>
+                            <p>Thanks for reaching out to me. I will try and respond as soon as possible</p>
+                            <br>
+                            <br>
+                            <p>- Ben</p>
+                            <small>
+                                <em>
+                                    “There are 2 hard problems in computer science: cache invalidation,
+                                    naming things, and off-by-1 errors.” - Leon Bambrick
+                                </em>
+                            </small>
                         </td>
                     </tr>
                 </table>

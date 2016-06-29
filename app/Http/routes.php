@@ -37,6 +37,22 @@ Route::post('/contact', function () {
         }
     );
 
+    Mail::send(
+        'emails.confirmation',
+        [
+            'name' => $_POST['name']
+        ],
+        function (Message $message) {
+
+            $message->subject('Confirmation');
+
+            $message->from('benj@minpayne.com');
+
+            $message->to($_POST['email']);
+
+        }
+    );
+
     $message = new \App\Message;
 
     $message->name      = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
