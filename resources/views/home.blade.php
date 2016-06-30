@@ -39,7 +39,7 @@
                 </form>
             </div>
         </div>
-        <div id="yang">
+        <div id="about" class="section right">
             <a class="controller about-controller" href="#ying">
                 <h1>About</h1>
             </a>
