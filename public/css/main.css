@@ -164,7 +164,7 @@ a.about-controller {
   a.contact-controller:hover, a.contact-controller:visited:hover,
   a.about-controller:hover,
   a.about-controller:visited:hover {
-    color: #597be8;
+    color: #333;
     text-decoration: none; }
 
 #wrapper {
