@@ -181,7 +181,6 @@ a.about-controller {
 .section > .controller {
   display: block;
   float: left;
-  text-align: center;
   width: 100%;
   position: relative;
   top: 50%;
@@ -190,10 +189,16 @@ a.about-controller {
     .section > .controller {
       width: 50%; } }
 
-.section > .controller + div {
-  float: left; }
-  @media screen and (max-width: 768px) {
-    .section > .controller + div {
-      width: 50%; } }
+@media screen and (max-width: 768px) {
+  .section > .controller + div {
+    float: left;
+    width: 50%; } }
+
+.section:hover, .section.active {
+  color: #333; }
+
+.section:hover .controller,
+.section.active .controller {
+  color: #ccc; }
 
 /*# sourceMappingURL=main.css.map */

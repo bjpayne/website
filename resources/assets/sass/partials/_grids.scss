@@ -12,7 +12,6 @@
 .section > .controller {
   display: block;
   float: left;
-  text-align: center;
   width: 100%;
   @include vertical-align;
   @media screen and (max-width: 768px) {

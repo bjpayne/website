@@ -7,3 +7,10 @@
 @import "partials/buttons";
 @import "partials/figures";
 @import "partials/grids";
+
+
+// Styles
+.section:hover, .section.active { color: $text-color }
+
+.section:hover .controller,
+.section.active .controller { color: $quiet-color }
