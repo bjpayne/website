@@ -48,7 +48,7 @@ table {
 body {
   color: #333;
   font-size: 16px;
-  font-family: "Open Sans" sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   padding: 30px;
   line-height: 1.6; }
@@ -156,9 +156,17 @@ body {
 .text-right {
   text-align: right  !important; }
 
-a.contact-controller {
-  color: #333;
-  font-size: 1.2em; }
+a.contact-controller,
+a.about-controller {
+  color: #333; }
+  a.contact-controller:visited,
+  a.about-controller:visited {
+    color: #333; }
+  a.contact-controller:hover, a.contact-controller:visited:hover,
+  a.about-controller:hover,
+  a.about-controller:visited:hover {
+    color: #597be8;
+    text-decoration: underline; }
 
 .section {
   display: block;
