@@ -12,14 +12,14 @@
 <div id="wrapper">
     <div id="container">
         @if(session('alert'))
-            <div class="alert {{ session('alert-type') or '' }} section">
-                <p class="typography">{{ session('alert') }}</p>
+            <div class="alert {{ session('alert-type') or '' }} section typography">
+                <p>{{ session('alert') }}</p>
             </div>
         @endif
         <div id="contact" class="section left out">
-            <a class="controller contact-controller" href="#contact">
-                <h1 class="typography">Contact</h1>
-            </a>
+            <div class="typography">
+                <a class="controller contact-controller h1" href="#contact">contact</a>
+            </div>
             <div id="contact-form">
                 <form action="/contact" method="post">
                     {{ csrf_field() }}
@@ -41,12 +41,10 @@
                 </form>
             </div>
         </div>
-        <div id="about" class="section right out">
-            <a class="controller about-controller" href="#about">
-                <h1 class="typography">About</h1>
-            </a>
+        <div id="about" class="section right out typography">
+            <a class="controller about-controller h1" href="#about">About</a>
             <div id="about-content">
-                <p class="typography">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
                     reprehenderit, tempora! Accusamus at aut dolor enim fugit incidunt inventore libero, magni minus
                     necessitatibus sint temporibus unde.</p>
             </div>
