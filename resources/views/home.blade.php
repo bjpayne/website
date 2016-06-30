@@ -18,7 +18,7 @@
         @endif
         <div id="contact" class="section left out">
             <div class="typography">
-                <a class="controller contact-controller h1" href="#contact">contact</a>
+                <a class="controller contact-controller h1" href="#contact">Contact</a>
             </div>
             <div id="contact-form">
                 <form action="/contact" method="post">
