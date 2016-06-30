@@ -203,7 +203,9 @@ a.about-controller {
   background: #333; }
 
 .section:hover .controller,
-.section.active .controller {
+.section:hover .controller:hover,
+.section.active .controller,
+.section.active .controller:hover {
   color: #ccc; }
 
 /*# sourceMappingURL=main.css.map */
