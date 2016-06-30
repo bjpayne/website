@@ -19,3 +19,9 @@
     width: 50%;
   }
 }
+.section > .controller + div {
+  @media screen and (max-width: 768px) {
+    float: left;
+    width: 50%;
+  }
+}

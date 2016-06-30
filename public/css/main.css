@@ -190,4 +190,10 @@ a.about-controller {
     .section > .controller {
       width: 50%; } }
 
+.section > .controller + div {
+  float: left; }
+  @media screen and (max-width: 768px) {
+    .section > .controller + div {
+      width: 50%; } }
+
 /*# sourceMappingURL=main.css.map */
