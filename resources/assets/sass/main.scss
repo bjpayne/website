@@ -10,7 +10,7 @@
 
 
 // Styles
-.section:hover, .section.active { color: $text-color }
+.section:hover, .section.active { background: $text-color }
 
 .section:hover .controller,
 .section.active .controller { color: $quiet-color }

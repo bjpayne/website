@@ -200,7 +200,7 @@ a.about-controller {
     width: 50%; } }
 
 .section:hover, .section.active {
-  color: #333; }
+  background: #333; }
 
 .section:hover .controller,
 .section.active .controller {
