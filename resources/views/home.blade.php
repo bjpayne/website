@@ -9,12 +9,12 @@
 <body>
 <div id="wrapper">
     <div id="container">
-        @if(session('message_sent'))
-            <div class="alert alert-success">
-                {{ session('message_sent') }}
+        @if(session('alert'))
+            <div class="alert {{ session('alert-type') or '' }} section">
+                {{ session('alert') }}
             </div>
         @endif
-        <div id="ying">
+        <div id="contact" class="section left">
             <a class="controller contact-controller" href="#yang">
                 <h1>Contact</h1>
             </a>

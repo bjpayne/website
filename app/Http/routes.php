@@ -61,6 +61,8 @@ Route::post('/contact', ['as' => 'contact', function () {
 
     $message->save();
 
-    return redirect(route('home'))->with('message_sent', 'Thank you for your message ' . $_POST['name']);
+    return redirect(route('home'))
+        ->with('alert', 'Thank you for your message ' . $_POST['name'])
+        ->with('alert-type', 'success');
 
 }]);
