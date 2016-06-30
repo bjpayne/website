@@ -16,8 +16,8 @@
                 {{ session('alert') }}
             </div>
         @endif
-        <div id="contact" class="section left">
-            <a class="controller contact-controller" href="#yang">
+        <div id="contact" class="section left out">
+            <a class="controller contact-controller" href="#contact">
                 <h1>Contact</h1>
             </a>
             <div id="contact-form">
@@ -41,11 +41,11 @@
                 </form>
             </div>
         </div>
-        <div id="about" class="section right">
-            <a class="controller about-controller" href="#ying">
+        <div id="about" class="section right out">
+            <a class="controller about-controller" href="#about">
                 <h1>About</h1>
             </a>
-            <div id="about-copy">
+            <div id="about-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
                     reprehenderit, tempora! Accusamus at aut dolor enim fugit incidunt inventore libero, magni minus
                     necessitatibus sint temporibus unde.</p>
