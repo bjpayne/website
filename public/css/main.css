@@ -165,7 +165,7 @@ a.about-controller {
   a.about-controller:hover,
   a.about-controller:visited:hover {
     color: #597be8;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 .section {
   display: block;

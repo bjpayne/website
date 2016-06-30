@@ -16,10 +16,8 @@
                 <p>{{ session('alert') }}</p>
             </div>
         @endif
-        <div id="contact" class="section left out">
-            <div class="typography">
-                <a class="controller contact-controller h1" href="#contact">Contact</a>
-            </div>
+        <div id="contact" class="section left out typography">
+            <a class="controller contact-controller h1" href="#contact">Contact</a>
             <div id="contact-form">
                 <form action="/contact" method="post">
                     {{ csrf_field() }}
