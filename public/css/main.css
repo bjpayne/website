@@ -167,6 +167,11 @@ a.about-controller {
     color: #597be8;
     text-decoration: none; }
 
+#wrapper {
+  display: block;
+  overflow: hidden;
+  width: 100%; }
+
 .section {
   display: block;
   float: left;
