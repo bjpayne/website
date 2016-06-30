@@ -3,6 +3,7 @@ body {
   font-size: $base-font-size;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
+  padding: 30px;
   line-height: 1.6;
 }
 
@@ -76,7 +77,15 @@ body {
 .text-center { text-align: center !important; }
 .text-right  { text-align: right  !important; }
 
-a.contact-controller {
+a.contact-controller,
+a.about-controller {
   color: $text-color;
-  font-size: 1.2em;
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover, &:visited:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
 }
