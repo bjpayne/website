@@ -8,12 +8,12 @@ $base-font-size: 16px;
 $base-line-height: 1.4;
 
 // Fixed Font
-$fixed-font-family: monospace;
+$fixed-font-family: 'Andale Mono', AndaleMono, monospace;
 $fixed-font-size: 85%;
 $fixed-line-height: $base-line-height;
 
 // Headings
-$header-font-family: 'Montserratt', sans-serif;
-$header-font-weight: $regular;
+$heading-font-family: 'Montserratt', sans-serif;
+$heading-font-weight: $regular;
 
 @import "modules/all";
