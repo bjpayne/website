@@ -178,7 +178,7 @@ a.about-controller {
       height: 50vh;
       width: 200%; } }
 
-.section > .contact-controller {
+.section > .controller {
   display: block;
   float: left;
   text-align: center;
@@ -187,7 +187,7 @@ a.about-controller {
   top: 50%;
   transform: translateY(-50%); }
   @media screen and (max-width: 768px) {
-    .section > .contact-controller {
+    .section > .controller {
       width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
