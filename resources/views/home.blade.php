@@ -13,12 +13,12 @@
     <div id="container">
         @if(session('alert'))
             <div class="alert {{ session('alert-type') or '' }} section">
-                {{ session('alert') }}
+                <p class="typography">{{ session('alert') }}</p>
             </div>
         @endif
         <div id="contact" class="section left out">
             <a class="controller contact-controller" href="#contact">
-                <h1>Contact</h1>
+                <h1 class="typography">Contact</h1>
             </a>
             <div id="contact-form">
                 <form action="/contact" method="post">
@@ -43,10 +43,10 @@
         </div>
         <div id="about" class="section right out">
             <a class="controller about-controller" href="#about">
-                <h1>About</h1>
+                <h1 class="typography">About</h1>
             </a>
             <div id="about-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
+                <p class="typography">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
                     reprehenderit, tempora! Accusamus at aut dolor enim fugit incidunt inventore libero, magni minus
                     necessitatibus sint temporibus unde.</p>
             </div>
