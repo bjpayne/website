@@ -182,13 +182,4 @@ a.about-controller {
     .section {
       width: 100%; } }
 
-.section:hover, .section.active {
-  background: #333; }
-
-.section:hover .controller,
-.section:hover .controller:hover,
-.section.active .controller,
-.section.active .controller:hover {
-  color: #ccc; }
-
 /*# sourceMappingURL=main.css.map */
