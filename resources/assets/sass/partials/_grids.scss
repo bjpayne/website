@@ -10,22 +10,6 @@
   position: relative;
   width: 50%;
   @media screen and (max-width: 768px) {
-    height: 50vh;
-    width: 200%;
-  }
-}
-.section > .controller {
-  display: block;
-  float: left;
-  width: 100%;
-  @include vertical-align;
-  @media screen and (max-width: 768px) {
-    width: 50%;
-  }
-}
-.section > .controller + div {
-  @media screen and (max-width: 768px) {
-    float: left;
-    width: 50%;
+    width: 100%;
   }
 }

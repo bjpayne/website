@@ -180,24 +180,7 @@ a.about-controller {
   width: 50%; }
   @media screen and (max-width: 768px) {
     .section {
-      height: 50vh;
-      width: 200%; } }
-
-.section > .controller {
-  display: block;
-  float: left;
-  width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-  @media screen and (max-width: 768px) {
-    .section > .controller {
-      width: 50%; } }
-
-@media screen and (max-width: 768px) {
-  .section > .controller + div {
-    float: left;
-    width: 50%; } }
+      width: 100%; } }
 
 .section:hover, .section.active {
   background: #333; }

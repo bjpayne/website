@@ -17,7 +17,6 @@
             </div>
         @endif
         <div id="contact" class="section left out typography">
-            <a class="controller contact-controller h1 text-center" href="#contact">Contact</a>
             <div id="contact-form">
                 <form action="/contact" method="post">
                     {{ csrf_field() }}
@@ -40,7 +39,6 @@
             </div>
         </div>
         <div id="about" class="section right out typography">
-            <a class="controller about-controller h1 text-center" href="#about">About</a>
             <div id="about-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
                     reprehenderit, tempora! Accusamus at aut dolor enim fugit incidunt inventore libero, magni minus
