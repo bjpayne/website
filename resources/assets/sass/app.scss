@@ -1,0 +1,212 @@
+/*
+|--------------------------------------------------------------------------
+| Main Imports
+|--------------------------------------------------------------------------
+*/
+@import 'https://fonts.googleapis.com/css?family=Lato|Slabo+27px';
+@import 'bootstrap_overrides';
+@import 'custom-variables';
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*
+|--------------------------------------------------------------------------
+| Layout
+|--------------------------------------------------------------------------
+*/
+
+.section {
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.inner-section {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header.section {
+  height: 100px;
+  left: 0;
+  padding: 0 35px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
+
+.tighten { margin-bottom: 0}
+
+/*
+|--------------------------------------------------------------------------
+| Forms
+|--------------------------------------------------------------------------
+*/
+.form-control {
+  box-shadow: none;
+}
+
+.form-control:focus { box-shadow: none }
+
+input.form-control {
+  height: 45px;
+  transition: padding .25s ease-in-out;
+  &.in {
+    padding-bottom: 0;
+  }
+}
+
+textarea.form-control {
+  height: 150px;
+  padding-top: 28px;
+  resize: none;
+  transition: padding .25s ease-in-out;
+  &.in {
+    padding-top: 20px
+  }
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  font-size: 75%;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  transition: all .25s ease-in-out;
+  &.in {
+    top: 5px;
+    font-size: 60%;
+  }
+  &.fade {
+    opacity: .5;
+  }
+}
+
+.form-group label.text-area-label {
+  top: 10px;
+  &.in {
+    top: 5px;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Components
+|--------------------------------------------------------------------------
+*/
+
+#notice {
+  background: #FFF;
+  border: 2px solid;
+  border-radius: 2px;
+  height: 50px;
+  min-width: 250px;
+  padding: 13px 6px;
+  position: fixed;
+  top: 15%;
+  transition: all .25s ease-in-out;
+}
+
+#notice.in { right: 25px }
+
+#notice.out { right: -300px }
+
+#notice.info {
+  border-color: $brand-primary;
+  color: $brand-primary;
+}
+
+#notice.alert {
+  border-color: $brand-danger;
+  color: $brand-danger;
+}
+
+#notice.warning {
+  border-color: $brand-warning;
+  color: $brand-warning;
+}
+
+#notice.success {
+  border-color: $brand-success;
+  color: $brand-success;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Buttons
+|--------------------------------------------------------------------------
+*/
+
+.btn:hover {
+  background: #fff;
+  border-color: #ccc
+}
+.btn:focus,
+.btn:active {
+  background: #fff;
+  border-color: #ccc;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  border-color: $brand-primary
+}
+
+.nav-controller {
+  bottom: 3%;
+  display: block;
+  font-size: 2em;
+  height: 30px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+  text-decoration: none;
+  width: 30px;
+}
+
+.nav-controller a:hover { text-decoration: none }
+
+#home .nav-controller a { color: #fff }
+
+#about .nav-controller a { color: #555 }
+
+/*
+|--------------------------------------------------------------------------
+| Styles
+|--------------------------------------------------------------------------
+*/
+
+header nav a {
+  color: $highlight;
+  margin-left: 10px;
+  &:hover {
+    text-decoration: none;
+    color: darken($highlight, 20%);
+  }
+}
+
+#home.section {
+  background: url('/img/bg-main.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#home .jumbotron { background: none }
+
+#home .jumbotron h1 { color: $highlight }
+
+#home .jumbotron p { color: $highlight }

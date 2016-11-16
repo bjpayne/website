@@ -1,0 +1,50 @@
+// Colors
+
+$gray-base:              #000;
+$brand-primary:         #4686BA;
+$brand-success:         #5cc153;
+$brand-info:            #65ADD0;
+$brand-warning:         #E8C438;
+$brand-danger:          #F25F5C;
+
+// Typography
+
+$font-family-base:        'Lato', sans-serif;
+$headings-font-family:    'Slabo 27px', sans-serif;
+$headings-font-weight:    normal;
+
+// Forms
+$input-border-radius:            2px;
+$input-border-radius-large:      2px;
+$input-border-radius-small:      2px;
+
+$input-border-focus:             $brand-primary;
+
+
+// Jumbotron
+$jumbotron-bg:                   #fff;
+
+// Buttons
+$btn-border-radius-base:         2px;
+$btn-border-radius-large:        2px;
+$btn-border-radius-small:        2px;
+
+$btn-primary-color:              #555;
+$btn-primary-bg:                 #fff;
+$btn-primary-border:             #ccc;
+
+$btn-success-color:              $brand-success;
+$btn-success-bg:                 #fff;
+$btn-success-border:             $btn-success-color;
+
+$btn-info-color:                 $brand-info;
+$btn-info-bg:                    #fff;
+$btn-info-border:                $btn-info-color;
+
+$btn-warning-color:              $brand-warning;
+$btn-warning-bg:                 #fff;
+$btn-warning-border:             $btn-warning-color;
+
+$btn-danger-color:               $brand-danger;
+$btn-danger-bg:                  #fff;
+$btn-danger-border:              $btn-danger-color;

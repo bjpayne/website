@@ -9,13 +9,13 @@
 
 /*
 |--------------------------------------------------------------------------
-| Register The Auto Loader
+| register the auto loader
 |--------------------------------------------------------------------------
 |
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
+| composer provides a convenient, automatically generated class loader for
+| our application. we just need to utilize it! we'll simply require it
 | into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels nice to relax.
+| loading any of our classes later on. it feels nice to relax.
 |
 */
 

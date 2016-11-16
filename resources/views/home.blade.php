@@ -4,49 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Bj Payne</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
+    <title>Ben Payne</title>
+    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<div id="wrapper">
-    <div id="container">
-        @if(session('alert'))
-            <div class="alert {{ session('alert-type') or '' }} section typography">
-                <p>{{ session('alert') }}</p>
+
+<div class="container-fluid">
+    <main class="row">
+        <div id="home" class="col-xs-12 section">
+           <div class="inner-section">
+                <div class="jumbotron">
+                    <h1 class="text-center">I'm Ben Payne.</h1>
+                    <p class="text-center">
+                        I am a web developer from Grand Rapids, MI.
+                    </p>
+                </div>
+           </div>
+           <div class="nav-controller text-center">
+               <a href="#about">&#10148;</a>
+           </div>
+        </div>
+        <div id="about" class="col-xs-12 section">
+            <div class="row inner-section">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut ipsum labore mollitia nobis,
+                        quas quidem voluptatibus! Aperiam culpa cum deleniti eligendi excepturi expedita facere, in modi,
+                        placeat quasi tempore.</p>
+                </div>
             </div>
-        @endif
-        <div id="contact" class="section left out typography">
-            <div id="contact-form">
-                <form action="/contact" method="post">
-                    {{ csrf_field() }}
-                    <div class="form-group">
-                        <label for="name">name</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">send</button>
-                    </div>
-                </form>
+            <div class="nav-controller text-center">
+               <a href="#contact">&#10148;</a>
             </div>
         </div>
-        <div id="about" class="section right out typography">
-            <div id="about-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem beatae delectus omnis
-                    reprehenderit, tempora! Accusamus at aut dolor enim fugit incidunt inventore libero, magni minus
-                    necessitatibus sint temporibus unde.</p>
+        <div id="contact" class="col-xs-12 section">
+            <div class="row inner-section">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <form action="{{ route('store') }}" method="post">
+                        {{ csrf_field() }}
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="text-area-label">Message</label>
+                            <textarea name="message" id="message" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 </div>
-<script src="/js/all.js"></script>
+<div id="notice" class="out">
+    <span id="notice-text"></span>
+</div>
+<script src="{{ elixir('js/app.js') }}"></script>
+@if(session('message'))
+    <script>
+        $(function () {
+            var notice = $('#notice');
+
+            notice.find('#notice-text').html("{{ session('message') }}");
+
+            notice.addClass("{{ session('message-type') }}");
+
+            notice.toggleClass('in out');
+
+            window.setTimeout(function () {
+                notice.toggleClass('in out')
+            }, 3000);
+        });
+    </script>
+@endif
 </body>
 </html>

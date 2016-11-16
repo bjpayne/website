@@ -164,9 +164,8 @@
                 <table>
                     <tr>
                         <td>
-                            <h1>Thank you for your message.</h1>
-                            <p><strong>Hey {{ $name }},</strong></p>
-                            <p>Thanks for reaching out to me. I will try and respond as soon as possible.</p>
+                            <h1>Hey {{ $name }},</h1>
+                            <p>Thanks for your message. I will be in touch soon.</p>
                             <p>- Ben</p>
                             <br>
                             <br>

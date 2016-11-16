@@ -13,10 +13,10 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix
-    .sass('main.scss')       
-    .scripts([
-        'jquery.min.js',
-        'scripts.js'
-    ]);
-
+    .sass('app.scss')
+    .browserify('app.js')
+    .version(['css/app.css', 'js/app.js'])
+    .browserSync({
+        proxy: 'website.app'
+    });
 });
