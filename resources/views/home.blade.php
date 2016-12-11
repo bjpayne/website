@@ -2,17 +2,19 @@
 @section('content')
     <div class="content">
         <h1 class="hero">Hello<span>.</span></h1>
-        <p>
-            I'm Ben Payne, a full stack developer currently working at
-            <a href="http://northpointe.com">Northpointe Bank</a> in Grand Rapids, MI. I use PHP, SQL, JavaScript,
-            HTML, and CSS to design and develop web applications.
+        <p>I'm Ben Payne, a full stack web developer currently working at
+            <a href="https://northpointe.com">Northpointe Bank</a> in Grand Rapids, MI.
         </p>
         <p>
-            I am passionate about solid, foundational programming that adheres to best practices, design patterns,
-            and community standards.
+            On a daily basis, I create dynamic web applications using PHP, MySql, Javascript, HTML and CSS. I enjoy
+            working with Laravel, Slim, WordPress, October CMS, SASS, Node, and jQuery.
         </p>
         <p>
-            You can get in touch with me anytime at <a href="mailto:benj@minpayne.com">benj@minpayne.com</a>
+            I see every new experience as an opportunity to learn. My favorite projects are those that require me to
+            push beyond my boundaries and acquire new skills and knowledge in order to succeed.
+        </p>
+        <p class="last">
+            You can get in touch with me anytime at <a href="mailto:benj@minpayne.com">benj@minpayne.com</a>.
         </p>
     </div>
 @endsection
