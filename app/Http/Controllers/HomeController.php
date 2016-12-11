@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreContactMessage;
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
 use Illuminate\Mail\Mailer;
 use Illuminate\Mail\Message;
 
@@ -18,7 +17,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('construction');
+        return view('home');
     }
 
     /**
