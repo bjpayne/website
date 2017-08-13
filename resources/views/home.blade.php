@@ -6,7 +6,7 @@
             <a href="https://northpointe.com">Northpointe Bank</a> in Grand Rapids, MI.
         </p>
         <p>
-            I create dynamic web applications using PHP, MySql, Javascript, HTML and CSS. I enjoy
+            I create dynamic web applications using PHP, Sql, Javascript, HTML and CSS. I enjoy
             working with Laravel, Slim, WordPress, October CMS, SASS, Node, and jQuery.
         </p>
         <p>
